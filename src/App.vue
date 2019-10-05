@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-    <layout-header></layout-header>
-      <router-view/>
-  </div>
+    <div id="app">
+        <layout-header></layout-header>
+        <router-view/>
+    </div>
 </template>
 
 <script lang="ts">
@@ -15,7 +15,8 @@
         },
     })
 
-    export default class App extends Vue {}
+    export default class App extends Vue {
+    }
 </script>
 
 <style lang="scss">

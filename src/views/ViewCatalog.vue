@@ -1,11 +1,25 @@
 <template>
-    <div>
-        <catalog-product v-for="product in products" :product="product" :key="product.id"></catalog-product>
-    </div>
+    <main>
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">Catalog</h1>
+                    <h2 class="subtitle">Something about categories</h2>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <catalog-product v-for="product in products" :product="product" :key="product.id"></catalog-product>
+                </div>
+            </div>
+        </section>
+    </main>
 </template>
 
 <script lang="ts">
-    import { Vue, Component } from 'vue-property-decorator';
+    import {Component, Vue} from 'vue-property-decorator';
     import {Product} from "@/interfaces/Product"
     import CatalogProduct from "@/components/Catalog/CatalogProduct.vue";
 

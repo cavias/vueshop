@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
                 <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
@@ -14,16 +14,9 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <router-link to="/">Home</router-link> |
-                <router-link to="/about">About</router-link>
-                <router-link to="/catalog">Catalog</router-link>
-                <a class="navbar-item">
-                    Home
-                </a>
-
-                <a class="navbar-item">
-                    Documentation
-                </a>
+                <router-link to="/" class="navbar-item" active-class="is-active">Home</router-link>
+                <router-link to="/about" class="navbar-item" active-class="is-active">About</router-link>
+                <router-link to="/catalog" class="navbar-item" active-class="is-active">Catalog</router-link>
 
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
