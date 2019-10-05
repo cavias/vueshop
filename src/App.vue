@@ -1,14 +1,12 @@
 <template>
   <div id="app">
     <layout-header></layout-header>
-      <div class="container">
-          <router-view/>
-      </div>
+      <router-view/>
   </div>
 </template>
 
 <script lang="ts">
-    import { Vue, Component } from 'vue-property-decorator';
+    import {Component, Vue} from 'vue-property-decorator';
     import LayoutHeader from "@/components/Layouts/LayoutHeader.vue"
 
     @Component({

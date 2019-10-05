@@ -1,26 +1,18 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" @click="onClick">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+    <main>
+        <home-intro></home-intro>
+    </main>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import HomeIntro from "@/components/Home/HomeIntro.vue";
 
 @Component({
   components: {
-    HelloWorld,
+    HomeIntro,
   },
 })
-export default class Home extends Vue {
-    // Initial data can be declared as instance properties
-    message: string = 'Hello!'
 
-    // Component methods can be declared as instance methods
-    onClick (): void {
-        window.alert(this.message)
-    }
-}
+export default class Home extends Vue {}
 </script>
