@@ -18,8 +18,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, debitis?
                 </main>
                 <footer class="">
-
-                    <a href="#">Add to cart</a>
+                    <button class="button is-success is-pulled-right">Add to cart</button>
                 </footer>
             </div>
             <div class="column is-full has-text-right">
