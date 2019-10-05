@@ -2,13 +2,17 @@
     <div class="column is-one-third-tablet is-one-quarter-desktop">
         <article class="columns is-mobile is-multiline">
             <div class="column is-one-third-mobile is-full-tablet">
-                <figure class="image is-square">
-                    <img src="https://via.placeholder.com/300" alt="Placeholder">
-                </figure>
+                <router-link :to="{name: 'product', params: {id: product.id}}">
+                    <figure class="image is-square">
+                        <img src="https://via.placeholder.com/300" alt="Placeholder">
+                    </figure>
+                </router-link>
             </div>
             <div class="column is-one-third-mobile is-full-tablet">
                 <header class="title">
-                    {{product.name}}
+                    <router-link :to="{name: 'product', params: {id: product.id}}">
+                        {{product.name}}
+                    </router-link>
                 </header>
                 <main>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, debitis?
@@ -34,6 +38,11 @@
     export default class CatalogProduct extends Vue {
         @Prop({required: true})
         product!: Product;
+
+        link: object = {
+            name: 'product',
+            id: this.product.id
+        }
     }
 </script>
 

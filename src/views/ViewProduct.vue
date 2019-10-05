@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Dit is de view voor {{product.name}}</h1>
+        <h1>Dit is de view voor een product, maar dat moet ik nog opzetten. Want dingen.</h1>
     </div>
 </template>
 
